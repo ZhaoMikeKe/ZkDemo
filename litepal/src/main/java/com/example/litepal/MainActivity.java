@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
         ButterKnife.bind(this);
         SQLiteDatabase db = Connector.getDatabase();
         data1 = DataSupport.findAll(BeanHY.class);
-//李元霸123这欧克
+//李元霸123
 
         ItemBind itemBind = new ItemBind<BeanHY>() {
             @Override
