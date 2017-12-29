@@ -50,17 +50,7 @@ public class MainActivity extends AppCompatActivity {
         ButterKnife.bind(this);
         SQLiteDatabase db = Connector.getDatabase();
         data1 = DataSupport.findAll(BeanHY.class);
-        //List<BeanHY> data = new ArrayList<>();
-//        BeanHY beanHY = new BeanHY();
-//        beanHY.setName("李元霸1");
-//        beanHY.setShijian("时间1");
-//        beanHY.setZhut("主题1");
-//        data.add(beanHY);
-//        BeanHY beanHY1 = new BeanHY();
-//        beanHY1.setName("李元霸2");
-//        beanHY1.setShijian("时间2");
-//        beanHY1.setZhut("主题2");
-//        data.add(beanHY1);
+
         ItemBind itemBind = new ItemBind<BeanHY>() {
             @Override
             public void onBind(ItemView itemView, final BeanHY data, final int position) {
@@ -191,18 +181,6 @@ public class MainActivity extends AppCompatActivity {
         mPopWindow.setOutsideTouchable(false);   //设置外部点击关闭ppw窗口
 
         mPopWindow.showAtLocation(getWindow().getDecorView(), Gravity.CENTER, 0, 0);
-//        view.measure(View.MeasureSpec.UNSPECIFIED, View.MeasureSpec.UNSPECIFIED);
-//        int popupWidth = view.getMeasuredWidth();    //  获取测量后的宽度
-//        int popupHeight = view.getMeasuredHeight();  //获取测量后的高度
-//        int[] location = new int[2];
-//        // 允许点击外部消失
-//        //mPopWindow.setBackgroundDrawable(new BitmapDrawable());//注意这里如果不设置，下面的setOutsideTouchable(true);允许点击外部消失会失效
-//        mPopWindow.setOutsideTouchable(true);   //设置外部点击关闭ppw窗口
-//        mPopWindow.setFocusable(true);
-//        // 获得位置 这里的v是目标控件，就是你要放在这个v的上面还是下面
-//        queding.getLocationOnScreen(location);
-//        //这里就可自定义在上方和下方了 ，这种方式是为了确定在某个位置，某个控件的左边，右边，上边，下边都可以
-//        mPopWindow.showAtLocation(queding, Gravity.NO_GRAVITY, (location[0] + queding.getWidth() / 2) - popupWidth / 2, location[1] - popupHeight);
     }
 
 
