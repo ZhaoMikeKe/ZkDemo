@@ -51,7 +51,6 @@ public class MainActivity extends AppCompatActivity {
         SQLiteDatabase db = Connector.getDatabase();
         data1 = DataSupport.findAll(BeanHY.class);
 //李元霸123
-
         ItemBind itemBind = new ItemBind<BeanHY>() {
             @Override
             public void onBind(ItemView itemView, final BeanHY data, final int position) {
