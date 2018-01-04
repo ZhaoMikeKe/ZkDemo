@@ -30,7 +30,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class MainActivity extends AppCompatActivity {
+public class HYSY_Activity extends AppCompatActivity {
 
 
     @BindView(R.id.rel)
@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_hysy);
         ButterKnife.bind(this);
         SQLiteDatabase db = Connector.getDatabase();
         data1 = DataSupport.findAll(BeanHY.class);
@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
                 itemView.setOnLongClickListener(R.id.itemall, new View.OnLongClickListener() {
                     @Override
                     public boolean onLongClick(View v) {
-                        new AlertDialog.Builder(MainActivity.this)
+                        new AlertDialog.Builder(HYSY_Activity.this)
 
                                 .setTitle("要删除此项吗？")
                                 .setPositiveButton("确定",
@@ -125,7 +125,7 @@ public class MainActivity extends AppCompatActivity {
 
     @SuppressLint("WrongConstant")
     private void showpopup(final int a, final int b) {
-        View view = LayoutInflater.from(MainActivity.this).inflate(R.layout.popupwindow, null);
+        View view = LayoutInflater.from(HYSY_Activity.this).inflate(R.layout.popupwindow, null);
         mPopWindow = new PopupWindow(view,
                 ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT, true);
         //poupwindow跟随键盘移动
