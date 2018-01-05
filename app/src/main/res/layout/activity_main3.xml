@@ -9,13 +9,13 @@
     <TextView
         android:id="@+id/tv"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="30dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:gravity="center"
-        android:text="159"
+        android:text="15988888888159888888881598888888815988888888"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -23,7 +23,7 @@
 
     <View
         android:id="@+id/view"
-        android:layout_width="30dp"
+        android:layout_width="0dp"
         android:layout_height="0.5dp"
         android:background="#000"
         app:layout_constraintBottom_toBottomOf="@+id/tv"
