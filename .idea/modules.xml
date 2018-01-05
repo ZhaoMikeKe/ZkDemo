@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/ZKsdk/ZKsdk.iml" filepath="$PROJECT_DIR$/ZKsdk/ZKsdk.iml" />
       <module fileurl="file://$PROJECT_DIR$/ZkDemo.iml" filepath="$PROJECT_DIR$/ZkDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/baserecyclerhelper/baserecyclerhelper.iml" filepath="$PROJECT_DIR$/baserecyclerhelper/baserecyclerhelper.iml" />
       <module fileurl="file://$PROJECT_DIR$/buglydemo/buglydemo.iml" filepath="$PROJECT_DIR$/buglydemo/buglydemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/fileprovider/fileprovider.iml" filepath="$PROJECT_DIR$/fileprovider/fileprovider.iml" />
       <module fileurl="file://$PROJECT_DIR$/gesture/gesture.iml" filepath="$PROJECT_DIR$/gesture/gesture.iml" />

@@ -10,6 +10,7 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/ZKsdk" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/baserecyclerhelper" />
             <option value="$PROJECT_DIR$/buglydemo" />
             <option value="$PROJECT_DIR$/fileprovider" />
             <option value="$PROJECT_DIR$/gesture" />
