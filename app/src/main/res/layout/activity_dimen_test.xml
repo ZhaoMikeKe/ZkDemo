@@ -25,4 +25,29 @@
         android:text="wu"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bt" />
+
+    <TextView
+        android:id="@+id/d"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="den"
+        app:layout_constraintTop_toBottomOf="@+id/textview" />
+    <TextView
+        android:id="@+id/d1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="den"
+        app:layout_constraintTop_toBottomOf="@+id/d" />
+    <TextView
+        android:id="@+id/d2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="den"
+        app:layout_constraintTop_toBottomOf="@+id/d1" />
+    <TextView
+        android:id="@+id/d3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="den"
+        app:layout_constraintTop_toBottomOf="@+id/d2" />
 </android.support.constraint.ConstraintLayout>
