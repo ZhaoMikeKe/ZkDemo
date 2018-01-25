@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         webSettings.setDomStorageEnabled(true); // 开启 DOM storage API 功能
         webSettings.setJavaScriptEnabled(true);
         webSettings.setCacheMode(WebSettings.LOAD_DEFAULT);
-        webview.loadUrl("http://10.3.241.161:8082/ui?systemId=287");
+        webview.loadUrl("https://map.baidu.com/");
         //步骤3. 复写shouldOverrideUrlLoading()方法，使得打开网页时不调用系统浏览器， 而是在本WebView中显示
         webview.setWebViewClient(new WebViewClient() {
 
