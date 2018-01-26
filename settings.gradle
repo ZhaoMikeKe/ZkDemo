@@ -1,1 +1,1 @@
-include ':app', ':vrdemo', ':ZKsdk', ':webviewtest', ':skintest', ':gesture', ':lottie', ':buglydemo', ':rvimageads', ':pingmushipei', ':fileprovider', ':litepal', ':baserecyclerhelper'
+include ':app', ':vrdemo', ':ZKsdk', ':webviewtest', ':skintest', ':gesture', ':lottie', ':buglydemo', ':rvimageads', ':pingmushipei', ':fileprovider', ':litepal', ':baserecyclerhelper', ':rxjavaretrofit'

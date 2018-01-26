@@ -1,4 +1,4 @@
-package com.example.lenovo.mydemo.bean;
+package com.example.rxjavaretrofit.bean;
 
 import java.io.Serializable;
 
@@ -201,30 +201,5 @@ public class RWBeanHS implements Serializable {
 
     public void setDelFlag(String delFlag) {
         this.delFlag = delFlag;
-    }
-
-    @Override
-    public String toString() {
-        return "RWBeanHS{" +
-                "id='" + id + '\'' +
-                ", name='" + name + '\'' +
-                ", displayName='" + displayName + '\'' +
-                ", discription='" + discription + '\'' +
-                ", appType='" + appType + '\'' +
-                ", imageThumb='" + imageThumb + '\'' +
-                ", image=" + image +
-                ", latitude=" + latitude +
-                ", longitude=" + longitude +
-                ", mapLevel=" + mapLevel +
-                ", startTime='" + startTime + '\'' +
-                ", endTime='" + endTime + '\'' +
-                ", available='" + available + '\'' +
-                ", cityCode=" + cityCode +
-                ", createUser=" + createUser +
-                ", createTime=" + createTime +
-                ", updateUser=" + updateUser +
-                ", updateTime=" + updateTime +
-                ", delFlag='" + delFlag + '\'' +
-                '}';
     }
 }

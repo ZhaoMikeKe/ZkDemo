@@ -30,7 +30,7 @@ class KotlinActivity : AppCompatActivity() {
 
     private fun getRenWu() {
         val retrofit = Retrofit.Builder()
-                .baseUrl("http://10.3.242.61:9090/")
+                .baseUrl("http://www.wanandroid.com/tools/mockapi/2194/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build()
         val renWu = retrofit.create(APIService.renwu::class.java)
@@ -42,7 +42,7 @@ class KotlinActivity : AppCompatActivity() {
         call.enqueue(object : Callback<List<RWBeanHS>> {
             override fun onResponse(call: Call<List<RWBeanHS>>, response: Response<List<RWBeanHS>>) {
                 val renWuBean = response.body()
-                textView.text = renWuBean.toString()
+                textView.text = renWuBean.get(0).toString()
             }
 
             override fun onFailure(call: Call<List<RWBeanHS>>, t: Throwable) {
