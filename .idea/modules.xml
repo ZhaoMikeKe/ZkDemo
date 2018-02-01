@@ -10,6 +10,7 @@
       <module fileurl="file://$PROJECT_DIR$/fileprovider/fileprovider.iml" filepath="$PROJECT_DIR$/fileprovider/fileprovider.iml" />
       <module fileurl="file://$PROJECT_DIR$/gesture/gesture.iml" filepath="$PROJECT_DIR$/gesture/gesture.iml" />
       <module fileurl="file://$PROJECT_DIR$/litepal/litepal.iml" filepath="$PROJECT_DIR$/litepal/litepal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/locationtest/locationtest.iml" filepath="$PROJECT_DIR$/locationtest/locationtest.iml" />
       <module fileurl="file://$PROJECT_DIR$/lottie/lottie.iml" filepath="$PROJECT_DIR$/lottie/lottie.iml" />
       <module fileurl="file://$PROJECT_DIR$/pingmushipei/pingmushipei.iml" filepath="$PROJECT_DIR$/pingmushipei/pingmushipei.iml" />
       <module fileurl="file://$PROJECT_DIR$/rvimageads/rvimageads.iml" filepath="$PROJECT_DIR$/rvimageads/rvimageads.iml" />
