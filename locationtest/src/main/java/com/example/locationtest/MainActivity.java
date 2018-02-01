@@ -3,7 +3,9 @@ package com.example.locationtest;
 import android.Manifest;
 import android.content.Context;
 import android.content.pm.PackageManager;
+import android.location.Address;
 import android.location.Criteria;
+import android.location.Geocoder;
 import android.location.Location;
 import android.location.LocationManager;
 import android.os.Build;
@@ -14,6 +16,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
+
+import java.io.IOException;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -123,6 +128,35 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             });
         } else {
             Toast.makeText(this, "gps location: lat==" + gps.getLatitude() + "  lng==" + gps.getLongitude(), Toast.LENGTH_SHORT).show();
+            Geocoder geocoder = new Geocoder(this);
+            StringBuilder stringBuilder = new StringBuilder();
+            try {
+                List<Address> addresses = geocoder.getFromLocation(gps.getLatitude(), gps.getLongitude(), 1);
+                if (addresses.size() > 0) {
+                    Address address = addresses.get(0);
+                    for (int i = 0; i < address.getMaxAddressLineIndex(); i++) {
+                        stringBuilder.append(address.getAddressLine(i)).append("\n");
+                    }
+                    stringBuilder.append(address.getCountryName()).append("_");//国家
+                    stringBuilder.append(address.getFeatureName()).append("_");//周边地址
+                    stringBuilder.append(address.getLocality()).append("_");//市
+                    stringBuilder.append(address.getPostalCode()).append("_");
+                    stringBuilder.append(address.getCountryCode()).append("_");//国家编码
+                    stringBuilder.append(address.getAdminArea()).append("_");//省份
+                    stringBuilder.append(address.getSubAdminArea()).append("_");
+                    stringBuilder.append(address.getThoroughfare()).append("_");//道路
+                    stringBuilder.append(address.getSubLocality()).append("_");//香洲区
+                    stringBuilder.append(address.getLatitude()).append("_");//经度
+                    stringBuilder.append(address.getLongitude());//维度
+                    System.out.println(stringBuilder.toString());
+                }
+                Toast.makeText(this, stringBuilder.toString(), Toast.LENGTH_SHORT).show();
+
+            } catch (IOException e) {
+                Toast.makeText(this, "报错", Toast.LENGTH_LONG).show();
+                e.printStackTrace();
+            }
+
         }
     }
 
