@@ -70,12 +70,12 @@ public class DimenTestActivity extends AppCompatActivity {
             public void run() {
 
                 int aa = bt.getWidth();
-                textview.setText(aa + "");
-                d.setText(metrics.densityDpi + "");
-                d1.setText(metrics.density + "");
-                d2.setText(((float) metrics.widthPixels / metrics.density) + "");
-                d3.setText(getScreenInch(DimenTestActivity.this) + "");
-                d4.setText((Math.sqrt(Math.pow(metrics.widthPixels, 2) + Math.pow(metrics.heightPixels, 2))) / getScreenInch(DimenTestActivity.this) + "");
+                textview.setText("按钮宽度100dp的basedp是"+aa + "");
+                d.setText("dpi"+metrics.densityDpi + "");
+                d1.setText("对160倍数"+metrics.density + "");
+                d2.setText("屏幕宽度除以上面倍数"+((float) metrics.widthPixels / metrics.density) + "");
+                d3.setText("屏幕尺寸"+getScreenInch(DimenTestActivity.this) + "");
+                d4.setText("实际dpi"+(Math.sqrt(Math.pow(metrics.widthPixels, 2) + Math.pow(metrics.heightPixels, 2))) / getScreenInch(DimenTestActivity.this) + "");
             }
         }, 200);
 
