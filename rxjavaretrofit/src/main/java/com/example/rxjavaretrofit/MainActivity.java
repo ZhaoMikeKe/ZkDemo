@@ -90,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void flatmapTest(View view) {
-        //fiatMap
+        //flatMap
         api.register(params).subscribeOn(Schedulers.io())               //在IO线程进行网络请求
                 .observeOn(AndroidSchedulers.mainThread())  //回到主线程去处理请求注册结果
                 .doOnNext(new Consumer<List<RWBeanHS>>() {

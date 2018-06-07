@@ -23,9 +23,9 @@ public class Main2Activity extends BaseActivity {
         //dimen生成
         DecimalFormat df = new DecimalFormat("0.00");
         for (int i = 1; i < 2001; i++) {
-            String aa1 = "<dimen name=" + "\"base" + i + "" + "dp\"" + ">";
+            String aa1 = "<dimen name=" + "\"y" + i + "\"" + ">";
             String aa2 = "</dimen>";
-            String aa3 = df.format(((float) 640 / 360) * i) + "dp";
+            String aa3 = df.format(((float) 1 / 3) * i) + "dp";
             Log.d("KKK", aa1 + aa3 + aa2);
         }
     }

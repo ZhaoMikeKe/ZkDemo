@@ -16,6 +16,7 @@
       <module fileurl="file://$PROJECT_DIR$/pingmushipei/pingmushipei.iml" filepath="$PROJECT_DIR$/pingmushipei/pingmushipei.iml" />
       <module fileurl="file://$PROJECT_DIR$/rvimageads/rvimageads.iml" filepath="$PROJECT_DIR$/rvimageads/rvimageads.iml" />
       <module fileurl="file://$PROJECT_DIR$/rxjavaretrofit/rxjavaretrofit.iml" filepath="$PROJECT_DIR$/rxjavaretrofit/rxjavaretrofit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shipei/shipei.iml" filepath="$PROJECT_DIR$/shipei/shipei.iml" />
       <module fileurl="file://$PROJECT_DIR$/skintest/skintest.iml" filepath="$PROJECT_DIR$/skintest/skintest.iml" />
       <module fileurl="file://$PROJECT_DIR$/vrdemo/vrdemo.iml" filepath="$PROJECT_DIR$/vrdemo/vrdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/webviewtest/webviewtest.iml" filepath="$PROJECT_DIR$/webviewtest/webviewtest.iml" />
