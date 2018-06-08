@@ -1,5 +1,6 @@
 package com.example.lenovo.myapp;
 
+import android.animation.ObjectAnimator;
 import android.annotation.TargetApi;
 import android.graphics.Rect;
 import android.os.Bundle;
@@ -8,10 +9,12 @@ import android.util.Log;
 import android.view.DisplayCutout;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.LinearLayout;
 
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
+    LinearLayout linearLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,7 +36,12 @@ public class MainActivity extends AppCompatActivity {
         //lp.layoutInDisplayCutoutMode = WindowManager.LayoutParams.LAYOUT_IN_DISPLAY_CUTOUT_MODE_DEFAULT;
         getWindow().setAttributes(lp);
         // getNotchParams();
-        findViewById(R.id.ll_parent).scrollTo(0, -(96));
+        //findViewById(R.id.ll_parent).scrollTo(0, -(96));
+        linearLayout = findViewById(R.id.ll_parent);
+        float curTranslationY = linearLayout.getTranslationY();
+        ObjectAnimator animator = ObjectAnimator.ofFloat(linearLayout, "translationY", curTranslationY, 96f);
+        animator.setDuration(100);
+        animator.start();
     }
 
     @TargetApi(28)
